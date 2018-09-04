@@ -39,6 +39,7 @@ var requestHandler = function(request, response) {
 
   } else {
     response.statusCode = 404;
+    response.write('Bad gateway error');
     response.end();
   }
 
